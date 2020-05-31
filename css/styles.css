@@ -1,8 +1,8 @@
 /* colours */
 :root {
-  --primary: #86BBD8;
-  --secondary: #F1D302;
-  --title: #2F4858;
+  --primary: #86bbd8;
+  --secondary: #f1d302;
+  --title: #2f4858;
 }
 
 /* layout styles */
@@ -12,7 +12,7 @@ nav {
 }
 
 nav .sidenav-trigger {
-    color: var(--title);
+  color: var(--title);
 }
 
 nav a {
@@ -105,4 +105,12 @@ input {
 
 form .input-field {
   margin-top: 30px;
+}
+
+.icons a:hover img {
+  transform: translate3d(0, -0.2em, 0);
+}
+
+.icons a img {
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
