@@ -3,8 +3,8 @@
     "short_name": "Compras!",
     "start_url": "/index.html",
     "display": "standalone",
-    "background_color": "#00C0C0",
-    "theme_color": "#FFFFFF",
+    "background_color": "#86BBD8",
+    "theme_color": "#2F4858",
     "orientation": "portrait-primary",
     "icons": [
         {
