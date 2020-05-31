@@ -1,0 +1,21 @@
+{
+    "name": "Lista de compras",
+    "short_name": "Compras!",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#00C0C0",
+    "theme_color": "#FFFFFF",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/img/icons/icon-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "/img/icons/icon-48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        }
+    ]
+}

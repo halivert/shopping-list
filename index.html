@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de compras</title>
+    <link href="/css/materialize.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="manifest" href="/manifest.json">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+  </head>
+  <body class="grey lighten-4">
+    <nav class="z-depth-0">
+      <div class="nav-wrapper container">
+        <a href="/">Lista de compras</a>
+        <span class="right">
+          <i class="material-icons sidenav-trigger" data-target="side-menu"
+            >menu</i
+          >
+        </span>
+      </div>
+    </nav>
+
+    <ul id="side-menu" class="sidenav side-menu">
+      <li><a class="subheader">Lista de compras</a></li>
+      <li><a href="/" class="waves-effect">Inicio</a></li>
+      <li><a href="/pages/about.html" class="waves-effect">Información</a></li>
+      <li><div class="divider"></div></li>
+      <li>
+        <p>
+          Con 💖, de Halí
+        </p>
+      </li>
+    </ul>
+
+    <div class="row products container grey-text text-darken-1">
+      <div class="col s6 l5 offset-l1">
+        Catálogo
+
+        <div class="card-panel product white row">
+          <img src="/img/default.png" alt="product thumb" />
+          <div class="product-details">
+            <div class="product-name">Arroz</div>
+            <div class="product-price">
+              $25.00
+            </div>
+          </div>
+          <div class="product-delete">
+            <i class="material-icons">delete_outline</i>
+          </div>
+        </div>
+
+        <div class="center">
+          <a
+            class="btn-floating btn-small btn-large add-btn sidenav-trigger"
+            data-target="side-form"
+          >
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+      </div>
+      <div class="col s6 l5">
+        Lista
+
+        <div class="card-panel product white row">
+          <img src="/img/default.png" alt="product thumb" />
+          <div class="product-details">
+            <div class="product-name">Frijoles</div>
+            <div class="product-price">
+              $25.00
+            </div>
+          </div>
+          <div class="product-delete">
+            <i class="material-icons">delete_outline</i>
+          </div>
+        </div>
+        <div class="center">
+          <a
+            class="btn-floating btn-small btn-large add-btn sidenav-trigger"
+            data-target="side-form"
+          >
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="side-form" class="sidenav side-form">
+      <form class="add-recipe container section">
+        <h6>Nuevo producto</h6>
+        <div class="divider"></div>
+        <div class="input-field">
+          <input
+            placeholder="e.g. Sopa de codito"
+            id="name"
+            type="text"
+            class="validate"
+          />
+          <label for="name">Nombre</label>
+        </div>
+        <div class="input-field">
+          <input
+            placeholder="e.g. 50"
+            id="price"
+            type="number"
+            class="validate"
+          />
+          <label for="price">Precio</label>
+        </div>
+        <div class="input-field center">
+          <button class="btn-small">Agregar</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="/js/ui.js"></script>
+  </body>
+</html>

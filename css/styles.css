@@ -1,0 +1,108 @@
+/* colours */
+:root {
+  --primary: #8499B1;
+  --secondary: #7B6D8D;
+  --title: #36151e;
+}
+
+/* layout styles */
+nav {
+  background: var(--primary);
+  border-bottom: 10px solid var(--secondary);
+}
+
+nav .sidenav-trigger {
+    color: var(--title);
+}
+
+nav a {
+  text-transform: uppercase;
+  color: var(--title);
+}
+
+nav a span {
+  font-weight: bold;
+}
+
+nav .sidenav-trigger {
+  margin: 0;
+}
+
+.sidenav li > p {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 0 32px;
+}
+
+/* product styles */
+.products,
+.main-container {
+  margin-top: 20px;
+}
+
+.products > div.col {
+  padding: 0 16px;
+}
+
+.card-panel.product {
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0px 1px 3px rgba(90, 90, 90, 0.1);
+  display: grid;
+  grid-template-columns: 2fr 6fr 1fr;
+  grid-template-areas: "image details delete";
+  position: relative;
+}
+
+.product img {
+  grid-area: image;
+  max-width: 50px;
+}
+
+.product-details {
+  grid-area: details;
+  margin-top: 6px;
+  padding-left: 8px;
+}
+
+.product-delete {
+  grid-area: delete;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.product-delete i {
+  font-size: 18px;
+}
+
+.product-title {
+  font-weight: bold;
+}
+
+.product-price {
+  font-size: 0.8em;
+}
+
+/* form-styles */
+.add-btn {
+  background: var(--title) !important;
+}
+
+input {
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.side-form button {
+  background: var(--title);
+  box-shadow: 1px 1px 3px rgba(90, 90, 90, 0.2);
+}
+
+form .input-field {
+  margin-top: 30px;
+}
