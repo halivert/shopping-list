@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,12 +16,12 @@
     <!--ios support-->
     <link rel="apple-touch-icon" href="/img/icons/icon-96x96.png" />
     <meta name="apple-mobile-web-app-status-bar" content="#2F4858" />
-    <meta name="theme-color" content="#2F4858" >
+    <meta name="theme-color" content="#2F4858" />
   </head>
   <body class="grey lighten-4">
     <nav class="z-depth-0">
       <div class="nav-wrapper container">
-        <a href="/">Lista de compras</a>
+        <a href="/">Lista <span>de compras</span></a>
         <span class="right">
           <i class="material-icons sidenav-trigger" data-target="side-menu"
             >menu</i
@@ -31,36 +31,16 @@
     </nav>
 
     <ul id="side-menu" class="sidenav side-menu">
-      <li><a class="subheader">Lista de compras</a></li>
+      <li>
+        <a class="subheader">Lista de compras</a>
+      </li>
       <li><a href="/" class="waves-effect">Inicio</a></li>
       <li><a href="/pages/about.html" class="waves-effect">Información</a></li>
     </ul>
 
     <div class="row products container grey-text text-darken-1">
-      <div class="col s6 l5 offset-l1">
+      <div class="catalogue col s6 l5 offset-l1">
         Catálogo
-
-        <div class="card-panel product white row">
-          <img src="/img/default.png" alt="product thumb" />
-          <div class="product-details">
-            <div class="product-name">Arroz</div>
-            <div class="product-price">
-              $25.00
-            </div>
-          </div>
-          <div class="product-delete">
-            <i class="material-icons">delete_outline</i>
-          </div>
-        </div>
-
-        <div class="center">
-          <a
-            class="btn-floating btn-small btn-large add-btn sidenav-trigger"
-            data-target="side-form"
-          >
-            <i class="material-icons">add</i>
-          </a>
-        </div>
       </div>
       <div class="col s6 l5">
         Lista
@@ -77,9 +57,24 @@
             <i class="material-icons">delete_outline</i>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="row container">
+      <div class="catalogue col s6 l5 offset-l1">
         <div class="center">
           <a
-            class="btn-floating btn-small btn-large add-btn sidenav-trigger"
+            class="btn-floating btn-small add-btn sidenav-trigger"
+            data-target="side-form"
+          >
+            <i class="material-icons">add</i>
+          </a>
+        </div>
+      </div>
+      <div class="col s6 l5">
+        <div class="center">
+          <a
+            class="btn-floating btn-small add-btn sidenav-trigger"
             data-target="side-form"
           >
             <i class="material-icons">add</i>
@@ -116,7 +111,29 @@
       </form>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyAAR1ZR8bvOs3BbSrZbquDiQxXcSkvUIVQ",
+        authDomain: "shopping-list-ea0af.firebaseapp.com",
+        databaseURL: "https://shopping-list-ea0af.firebaseio.com",
+        projectId: "shopping-list-ea0af",
+        storageBucket: "shopping-list-ea0af.appspot.com",
+        messagingSenderId: "18909849388",
+        appId: "1:18909849388:web:0701bb4d62aae771daee89",
+        measurementId: "G-E16K0FDNMP",
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+
+      const db = firebase.firestore();
+    </script>
+
     <script src="/js/app.js"></script>
+    <script src="/js/db.js"></script>
     <script src="/js/ui.js"></script>
   </body>
 </html>

@@ -93,6 +93,10 @@ nav .sidenav-trigger {
   background: var(--title) !important;
 }
 
+.accent {
+  background: var(--title) !important;
+}
+
 input {
   box-shadow: none !important;
   -webkit-box-shadow: none !important;
