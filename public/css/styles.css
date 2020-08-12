@@ -118,3 +118,30 @@ form .input-field {
 .icons a img {
   transition: transform 0.2s ease, -webkit-transform 0.2s ease;
 }
+
+.input-field label {
+  color: var(--title) !important;
+}
+
+.input-field input:focus + label {
+  color: var(--title) !important;
+}
+
+.input-field input:focus {
+  border-bottom: 1px solid var(--title) !important;
+  box-shadow: 0 1px 0 0 var(--title) !important;
+}
+
+.input-field input.valid {
+  border-bottom: 1px solid var(--title) !important;
+  box-shadow: 0 1px 0 0 var(--title) !important;
+}
+
+.input-field input.invalid {
+  border-bottom: 1px solid var(--secondary) !important;
+  box-shadow: 0 1px 0 0 var(--secondary) !important;
+}
+
+.input-field .prefix.active {
+  color: var(--title) !important;
+}
